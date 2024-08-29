@@ -1,0 +1,55 @@
+.choose {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #10241FFF;
+    padding: 7rem 8rem;
+
+    .choose_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+    > h1 {
+        font-weight: 600;
+        font-size: 48px;
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        color: white;
+        b {
+            color: #02BA85FF;
+        }
+    }
+}
+    > .crypto_change {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        margin-top: 60px;
+
+        .crypto_change_column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 80px;
+
+            > button {
+                border: 1px solid rgba(70, 89, 74, 1);
+                background: rgba(12, 32, 27, 1);
+                color: white;
+                width: 100%;
+                height: 58px;
+                padding: 0 70px;
+                border-radius: 5px;
+                font-weight: 400;
+                font-size: 25px;
+            }
+            > img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

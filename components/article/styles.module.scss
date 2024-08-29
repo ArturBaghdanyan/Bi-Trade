@@ -1,0 +1,49 @@
+.trading {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    & .trading_texture {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        .trading_texture_text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            width: 60%;
+        > span {
+            font-size: 40px;
+            font-weight: 600;
+            color: white;
+            > b {
+                color: rgba(0, 208, 148, 1);
+            }
+        }
+        > p {
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 1);
+            opacity: 60%;
+        }
+    }
+    .trading_texture_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 60px;
+        background-color: rgba(0, 208, 148, 1);
+        border-radius: 8px;
+        > button {
+            background: none;
+            border: none;
+        }
+    }
+    }
+    .channel {
+        display: flex;
+        align-items: center;
+    }
+}
