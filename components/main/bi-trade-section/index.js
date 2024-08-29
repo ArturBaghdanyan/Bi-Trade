@@ -4,7 +4,7 @@ import { tradeData } from "../../../data/biTrade-data";
 const BiTradeSection = () => {
 
 	return (
-			<section style={{backgroundColor: "#182B27FF"}}>
+	<section style={{backgroundColor: "#182B27FF"}}>
 			<div className={`${style.trade} container-spacing`}>
 					<h2>Why <b>Bi Trade</b></h2>
 					<div className={style.trade_list}>
@@ -27,7 +27,7 @@ const BiTradeSection = () => {
 						))}     
 					</div>
 			</div>
-	</section>
+</section>
 	)
 }
 export default BiTradeSection;

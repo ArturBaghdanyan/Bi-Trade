@@ -1,0 +1,36 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    & h2 {
+        color: white;
+        font-weight: 600;
+        font-size: 48px;
+        text-align: center;
+
+        > b {
+            color: rgba(0, 208, 148, 1);
+        }
+    }
+    .accordion_list {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+
+        & .accordion_list_column {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            row-gap: 15px;
+
+            & .accordion_item {
+                border-radius: 16px;
+                padding: 24px;
+                background: rgba(33, 52, 47, 1);
+                > .accordion_heading .accordion_button {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

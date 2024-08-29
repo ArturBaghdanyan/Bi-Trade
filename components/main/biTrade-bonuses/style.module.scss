@@ -1,0 +1,29 @@
+.trade_bonuses {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: white;
+
+    > h2 {
+        font-weight: 600;
+        font-size: 48px;
+        padding-left: 60px;
+        > b {
+            color: rgba(0, 208, 148, 1);
+        }
+    }
+        & .trade_bonuses_text {
+            display: flex;
+            column-gap: 20px;
+            > span {
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1);
+            }
+            > img {
+                width: 15px;
+                height: 19px;
+                margin-top: 13px;
+            }
+        }
+    }
