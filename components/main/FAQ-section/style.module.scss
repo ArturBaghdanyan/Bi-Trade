@@ -1,6 +1,7 @@
 .accordion {
     display: flex;
     flex-direction: column;
+    padding: 6rem 8rem 13rem 8rem !important;
     & h2 {
         color: white;
         font-weight: 600;
@@ -16,19 +17,44 @@
         justify-content: center;
         column-gap: 30px;
 
-        & .accordion_list_column {
+        > .accordion_list_column {
             display: flex;
             flex-direction: column;
             color: white;
             row-gap: 15px;
 
-            & .accordion_item {
+        > .accordion_item {
                 border-radius: 16px;
                 padding: 24px;
                 background: rgba(33, 52, 47, 1);
                 > .accordion_heading .accordion_button {
                     display: flex;
                     justify-content: space-between;
+                    cursor: pointer;
+
+                    > h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 0;
+                        text-transform: capitalize;
+                    }
+                }
+                &.accordion_panel {
+                    width: 90%;
+                    overflow: hidden;
+                    transition: max-height 0.5s ease-out, opacity 0.5s ease-out 0.3s;
+                    opacity: 0;
+                    max-height: 0;
+                    color: white;
+                    &.active {
+                        max-height: 200px; /* Adjust based on content */
+                        opacity: 1;
+                        color: white;
+                        transition: max-height 0.5s ease-out, opacity 1s ease-out 1s;
+                    }
+                    > p {
+                        padding: 0 20px;
+                    }
                 }
             }
         }

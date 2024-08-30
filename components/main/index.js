@@ -4,7 +4,7 @@ import BiTradeBonuses from "./biTrade-bonuses/index";
 import BiTradeSection from "./bi-trade-section/index";
 import MarketSection from "./market-section/index";
 import AccordionComponent from "./FAQ-section";
-// import NewsLetter from "./news-letter/index";
+import NewsLetter from "./news-letter/index";
 
 
 const MainContainer = () => {
@@ -17,7 +17,7 @@ const MainContainer = () => {
 			<BiTradeSection />
 			<MarketSection />
 			<AccordionComponent />
-			{/* <NewsLetter /> */}
+			<NewsLetter />
 		</main>
 	)
 }

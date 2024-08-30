@@ -3,6 +3,7 @@ import { tradeData } from "../../../data/biTrade-data";
 
 const BiTradeSection = () => {
 
+	// The list is dynamically generated from tradeData, and item 4's text is split into multiple lines.
 	return (
 	<section style={{backgroundColor: "#182B27FF"}}>
 			<div className={`${style.trade} container-spacing`}>
@@ -15,6 +16,7 @@ const BiTradeSection = () => {
 									<span>{item.title}</span>
 									{item.id === 4 ? (
 										<p>
+											{/* If the item's ID is 4, split the text into multiple lines */}
 											{item.text.map((line, index) => (
 												<span key={index}>{line}<br/></span>
 											))}

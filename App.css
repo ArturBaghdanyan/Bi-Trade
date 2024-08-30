@@ -13,3 +13,7 @@
 .container-spacing {
   padding: 6rem 8rem;
 }
+button:hover, a:hover, select:hover {
+	color: orange !important;
+	cursor: pointer !important;
+}
