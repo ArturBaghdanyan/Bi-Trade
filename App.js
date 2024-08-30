@@ -1,5 +1,6 @@
 import './App.css';
 import TradingText from './components/article';
+import Footer from './components/footer';
 import Header from './components/header';
 import MainContainer from './components/main';
 
@@ -11,6 +12,7 @@ function App() {
       <TradingText />
     </div>
      <MainContainer />
+     <Footer />
    </div>
   );
 }

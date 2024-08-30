@@ -12,12 +12,12 @@
 		}
 	}
 
-	.trade_list {
+	&_list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 			
-	.trade_list_item {
+	&_item {
 		width: 100%;
 		height: 250px;
 		border-radius: 15px;
@@ -40,7 +40,7 @@
 			}
 		}
 
-		.trade_text {
+		&_text {
 				display: flex;
 				flex-direction: column;
 				row-gap: 8px;
@@ -56,7 +56,7 @@
 		.trade_list {
 			grid-template-columns: auto;
 
-			& .trade_list_item {
+			&_item {
 				width: 80%;
 				margin: auto;
 			}

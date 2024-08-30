@@ -1,0 +1,19 @@
+.footer {
+    padding: 0 8rem;
+    color: white;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            > span {
+                font-weight: 600;
+                font-size: 18px;
+                
+            }
+        }
+    }
+}

@@ -12,12 +12,12 @@
             color: rgba(0, 208, 148, 1);
         }
     }
-    .accordion_list {
+    &_list {
         display: flex;
         justify-content: center;
         column-gap: 30px;
 
-        > .accordion_list_column {
+        &_column {
             display: flex;
             flex-direction: column;
             color: white;
@@ -39,14 +39,14 @@
                         text-transform: capitalize;
                     }
                 }
-                &.accordion_panel {
+                > .accordion_panel {
                     width: 90%;
                     overflow: hidden;
                     transition: max-height 0.5s ease-out, opacity 0.5s ease-out 0.3s;
                     opacity: 0;
                     max-height: 0;
                     color: white;
-                    &.active {
+                    > .active {
                         max-height: 200px; /* Adjust based on content */
                         opacity: 1;
                         color: white;

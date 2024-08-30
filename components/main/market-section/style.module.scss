@@ -17,9 +17,11 @@
     flex-direction: column;
     row-gap: 100px;
     
-    .market_list_piece {
+    &_piece {
         text-align: center;
         text-transform: capitalize;
+        width: 56%;
+        margin: auto;
 
         & h3 {
             font-weight: 600;
@@ -27,8 +29,6 @@
             margin: 0;
         }
         & p {
-            width: 50%;
-            margin: 0 auto;
             text-align: start;
             line-height: 30px;
             color: rgba(255, 255, 255, 1);

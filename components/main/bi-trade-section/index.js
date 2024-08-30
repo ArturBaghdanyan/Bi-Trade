@@ -12,7 +12,7 @@ const BiTradeSection = () => {
 						{tradeData.map(item => (
 							<div key={item.id} className={style.trade_list_item}>
 								<img src={item.icon} alt="icon" />
-								<div className={style.trade_text}>
+								<div className={style.trade_list_item_text}>
 									<span>{item.title}</span>
 									{item.id === 4 ? (
 										<p>
