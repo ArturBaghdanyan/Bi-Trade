@@ -20,7 +20,7 @@ const Footer = () => {
 								advisor before making any investment decisions.
 							</p>
 						</div>
-						<div>
+						<div className={style.footer_content_text}>
 							<span>Disclaimer:</span>
 							<p>
 								We are not liable for any financial losses or damages resulting 
@@ -29,13 +29,13 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					<div>
-						<div>
-							<div>
+					<div className={style.footer_row}>
+						<div className={style.footer_row_column}>
+							<div className={style.footer_logo}>
 								<img src={logo} alt="logo" />
 								<img src={arrowIcon} alt="arrow-icon" />
 							</div>
-							<div>
+							<div className={style.footer_row_column_text}>
 								<p>
 									Welcome to our trading site! We offer the best, most affordable 
 									products and services around. Shop now and 

@@ -9,10 +9,84 @@
         &_text {
             display: flex;
             flex-direction: column;
+            text-transform: capitalize;
             > span {
                 font-weight: 600;
                 font-size: 18px;
                 
+            }
+            > p {
+                color: rgba(153, 161, 159, 1);
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+
+        &_column {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            
+            > .footer_logo {
+                display: flex;
+                column-gap: 20px;
+            }
+            &_text {
+                width: 55%;
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+        &_links {
+            display: flex;
+            column-gap: 60px;
+
+            &_item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
+                > h3 {
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                > a {
+                    margin-top: 8px;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 900px) and (max-width: 1065px) {
+        &_row {
+            column-gap: 20px;
+            &_column {
+                &_text {
+                    width: 80%;
+                }
+                > .footer_logo {
+                    > img:first-child {
+                        width: 200px;
+                        height: 50px;
+                    }
+                    > img:last-child {
+                        width: 120px;
+                        height: 50px;
+                    }
+                }
+            }
+            &_links {
+                column-gap: 40px;
             }
         }
     }
