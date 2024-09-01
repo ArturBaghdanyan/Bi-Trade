@@ -90,4 +90,27 @@
             }
         }
     }
+    .footer_contact {
+        display: flex;
+        column-gap: 20px;
+
+         > a {
+            width: 24px;
+            height: 24px;
+            > img {
+                max-width: 100%;
+                width: 20px;
+                height: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+         }
+    }
+    .border {
+        border-top: 1px solid rgba(153, 161, 159, 1);
+        margin: 40px auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
 }

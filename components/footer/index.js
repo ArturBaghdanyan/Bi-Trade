@@ -3,6 +3,13 @@ import arrowIcon from "../../assets/footer_icons/arrow.svg";
 import { FooterList } from "./footerList";
 import { footerList } from "../../data/footer-list";
 import style from "./style.module.scss";
+import { Link } from "react-router-dom";
+import facebook from "../../assets/footer_icons/facebook.svg";
+import linkedin from "../../assets/footer_icons/linkedin.svg";
+import instagram from "../../assets/footer_icons/instagram.svg";
+import youtube from "../../assets/footer_icons/youtube.svg";
+import telegram from "../../assets/footer_icons/telegram.svg";
+
 
 const Footer = () => {
 	return (
@@ -44,6 +51,28 @@ const Footer = () => {
 							</div>
 						</div>
 						<FooterList data={footerList} />
+					</div>
+					<div>
+						<div className={style.footer_contact}>
+							<Link to="/demo">
+								<img src={facebook} alt="facebook" />
+							</Link>
+							<Link to="/demo">
+								<img src={linkedin} alt="linkedin" />
+							</Link>
+							<Link to="/demo">
+								<img src={instagram} alt="instagram" />
+							</Link>
+							<Link to="/demo">
+								<img src={youtube} alt="youtube" />
+							</Link>
+							<Link to="/demo">
+								<img src={telegram} alt="telegram" />
+							</Link>
+						</div>
+					</div>
+					<div className={style.border}>
+						<p>Copyright © 2024</p>
 					</div>
 			</div>
 		</footer>
