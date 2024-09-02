@@ -37,4 +37,36 @@
         }
     }
 }
+@media only screen and (max-width: 699px) {
+    .market_list {
+        row-gap: 50px;
+
+        &_piece {
+            width: 80%;
+
+            > h3 {
+                font-size: 28px;
+            }
+            > p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .market_list {
+        row-gap: 50px;
+
+        &_piece {
+            width: 80%;
+            > h3 {
+                font-size: 32px;
+            }
+            > p {
+                text-align: center;
+            }
+        }
+    }
+}
 }

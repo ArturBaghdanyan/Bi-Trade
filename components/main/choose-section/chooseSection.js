@@ -5,7 +5,7 @@ const ChooseSection = () => {
 
 	return (
 		<section>
-			<div className={`${style.choose}`}>
+			<div className={`${style.choose} container-spacing`}>
 				<div className={style.choose_title}>
 					<h1>
 						<b>Choose </b>  
@@ -17,7 +17,7 @@ const ChooseSection = () => {
 
 				<div className={style.crypto_change}>
 					<div className={style.crypto_change_column}>
-						<button>bitcoin</button>
+						<button>Bitcoin</button>
 						<img src={crypto} alt="crypto" />
 						<button>Ethereum</button>
 					</div>

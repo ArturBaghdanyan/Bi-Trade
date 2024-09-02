@@ -8,11 +8,11 @@ function App() {
   return (
    <div className="App">
     <div className='columns'>
-      <Header />
+      {/* <Header /> */}
       <TradingText />
     </div>
      <MainContainer />
-     <Footer />
+     {/* <Footer /> */}
    </div>
   );
 }

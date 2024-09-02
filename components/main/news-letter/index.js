@@ -1,5 +1,6 @@
 import newsIcon from "../../../assets/section/news-icon.svg";
 import style from "./style.module.scss";
+import { Link } from "react-router-dom";
 
 const NewsLetter = () => {
 	return (
@@ -15,7 +16,9 @@ const NewsLetter = () => {
 				</div>
 				<div className={style.form}>
 					<input type="email" name="email" placeholder="Email Address" />
-					<button>Submit</button>
+					<button>
+						<Link to="/register">Submit</Link>
+					</button>
 				</div>
 			</div>
 		</div>

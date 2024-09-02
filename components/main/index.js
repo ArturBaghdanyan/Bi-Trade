@@ -3,7 +3,7 @@ import ChooseSection from "./choose-section/chooseSection";
 import BiTradeBonuses from "./biTrade-bonuses/index";
 import BiTradeSection from "./bi-trade-section/index";
 import MarketSection from "./market-section/index";
-import AccordionComponent from "./FAQ-section";
+import HomeFreeAcc from "./FAQ-section/script";
 import NewsLetter from "./news-letter/index";
 
 
@@ -13,10 +13,10 @@ const MainContainer = () => {
 		<main>
 			<FeatureSection />
 			<ChooseSection />
-			<BiTradeBonuses />
+			{/* <BiTradeBonuses /> */}
 			<BiTradeSection />
 			<MarketSection />
-			<AccordionComponent />
+			<HomeFreeAcc />
 			<NewsLetter />
 		</main>
 	)

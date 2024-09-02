@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background:linear-gradient(#0E221D,#172A26);
+    padding-bottom: 6rem;
+    
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  .title {
+    color: white;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+
+    > b {
+      color: rgba(0, 208, 148, 1);
+    }
+  }
+
+  .itemContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    column-gap: 35px;
+    row-gap: 20px;
+
+    &_items {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      color: white;
+      row-gap: 15px;
+
+      .itemWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s;
+        background-color: #0F231D;
+        border-radius: 1vw;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+
+        .accordion_button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer; 
+          padding: 20px;
+          column-gap: 12px;
+          text-transform: capitalize;
+
+          > h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0;
+            text-transform: capitalize;
+          }
+        
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      }      
+      .itemWrapper:hover{
+        border: 0.1px solid #00D094 !important;
+      }     
+    }
+  }
+}
+
+
+  @media only screen and (min-width: 993px) and (max-width: 1199px) {
+      .wrapper {
+        .title {
+          font-size: 35px;
+        }
+        .itemContainer {
+          &_items {
+            .itemWrapper {
+              .accordion_button {
+                > h3 {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    display: block;
+    .wrapper {
+      .title {
+        font-size: 35px;
+      }
+      .itemContainer {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        &_items {
+          .itemWrapper {
+            .accordion_button {
+              > h3 {
+                font-size: 15px;
+              }
+              >div > p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

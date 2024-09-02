@@ -45,8 +45,40 @@
         }
     }
     }
+
+    @media only screen and (min-width: 992px) and (max-width: 1190px) {
+        &_texture {
+            &_text {
+                width: 80%;
+            > span {
+                font-size: 30px;
+            }
+        }
+        }
+    }
     .channel {
         display: flex;
         align-items: center;
     }
+}
+@media only screen and (max-width: 992px) {
+    .trading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+        
+    &_texture {
+        &_text {
+            width: 80%;
+            margin: auto;
+            > span {
+                font-size: 30px;
+            }
+        }
+        &_button {
+            margin: auto;
+        }
+    }
+}
 }
