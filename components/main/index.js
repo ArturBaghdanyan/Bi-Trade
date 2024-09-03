@@ -13,7 +13,7 @@ const MainContainer = () => {
 		<main>
 			<FeatureSection />
 			<ChooseSection />
-			{/* <BiTradeBonuses /> */}
+			<BiTradeBonuses />
 			<BiTradeSection />
 			<MarketSection />
 			<HomeFreeAcc />

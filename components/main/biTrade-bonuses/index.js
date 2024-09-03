@@ -1,5 +1,6 @@
 import style from "./style.module.scss";
 import vector from "../../../assets/section/trade-bonuses_icons/vector.svg";
+import { SwiperIcons } from "./swiper";
 
 const BiTradeBonuses = () => {
 	return (
@@ -14,6 +15,7 @@ const BiTradeBonuses = () => {
 			<div>
 				<input type="text" />
 			</div>
+			<SwiperIcons />
 		</div>
 	</section>
 	)

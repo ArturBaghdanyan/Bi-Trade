@@ -26,4 +26,37 @@
                 margin-top: 13px;
             }
         }
+
+        .swiper_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 30px;
+        
+        .swiper {
+            overflow-x: hidden;
+            width: 100%;
+            
+
+            // &_wrapper {
+            //     width: 70%;
+            //     margin: 0 auto;
+            //     height: auto;
+                 &_slide {
+                    width: 800px !important;
+                    height: 300px !important;
+                    border-radius: 30px !important;
+                    background: rgba(188, 204, 199, 1);
+                }
+               
+        // }
+        &_pagination {
+            color: white;
+            width: 70px;
+            height: 47px;
+            background: none;
+            border: none;
+        }
+        }
+    }
     }

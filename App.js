@@ -12,7 +12,7 @@ function App() {
       <TradingText />
     </div>
      <MainContainer />
-     {/* <Footer /> */}
+     <Footer />
    </div>
   );
 }
