@@ -3,7 +3,7 @@
     top: -130px;
     width: 60%;
     background-color: rgba(0, 208, 148, 1);
-    padding: 0 60px;
+    padding: 0 40px;
     border-radius: 24px;
     margin: 0 auto;
 	opacity: 80%;
@@ -83,10 +83,12 @@
 @media only screen and (max-width: 899px) {
     .newsSection {
 			top: -70px;
-            padding: 0 40px;
+            padding: 0px 30px;
+            width: 55% !important;
         .news {
             column-gap: 40px;
 			padding: 0;
+
             &_icon {
                 width: 40%; 
                 height: 281px;
@@ -146,6 +148,11 @@
 							}
 						}
 						.form {
+
+                            > input {
+                                width: 60%;
+                                height: 40px;
+                            }
 							> button {
 								width: 35%;
 								height: 40px;
