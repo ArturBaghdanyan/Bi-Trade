@@ -17,16 +17,16 @@ const Header = () => {
 				Use <Link> instead of <a> to enable client-side navigation.
 				This prevents full page reloads and provides a smoother user experience.
 				*/}
-					<Link to="/demo">FREE DEMO</Link>
-					<Link to="/About" target="_blank">About us</Link>
-					<Link to="/contact">Contact</Link>
+					<Link to="/demo" target="_blank">FREE DEMO</Link>
+					<Link to="/about" target="_blank">About us</Link>
+					<Link to="/contact" target="_blank">Contact</Link>
 					<select>
 						<option>Language</option>
 						<option>English</option>
 						<option>Armenian</option>
 						<option>Russian</option>
 					</select>
-					<Link to="/register">Registration</Link>
+					<Link to="/register" target="_blank">Registration</Link>
 				</nav>
 				<div className={styles.header_button}>
 					<button>Join Now</button>
