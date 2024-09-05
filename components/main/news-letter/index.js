@@ -1,10 +1,23 @@
 import newsIcon from "../../../assets/section/news-icon.svg";
 import style from "./style.module.scss";
-import { Link } from "react-router-dom";
+import {useState, useEffect} from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const NewsLetter = () => {
+	const [changeColor, setChangeColor] = useState(false);
+	const location = useLocation();
+
+	useEffect(() => {
+	  // If the current route is "/about", change opacity
+	  if (location.pathname === "/about") {
+		setChangeColor(true);
+	  } else {
+		setChangeColor(false);
+	  }
+	}, [location]);
+	
 	return (
-	<section className={style.newsSection}>
+	<section className={`${style.newsSection} ${changeColor ? style.changeColor : ''} `}>
 		<div className={`${style.news}`}>
 			<div className={style.news_icon}>
 				<img src={newsIcon} alt="vector" />

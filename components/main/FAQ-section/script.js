@@ -33,7 +33,7 @@ export default function HomeFreeAcc() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.faq_container}>
       <div className={`${styles.wrapper} container-spacing`}>
         <h2 className={styles.title}>
           Most Common <b style={{ color: "#00D094" }}>FAQ</b>

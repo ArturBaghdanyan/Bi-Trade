@@ -18,7 +18,7 @@ const Header = () => {
 				This prevents full page reloads and provides a smoother user experience.
 				*/}
 					<Link to="/demo">FREE DEMO</Link>
-					<Link to="/about">About us</Link>
+					<Link to="/About" target="_blank">About us</Link>
 					<Link to="/contact">Contact</Link>
 					<select>
 						<option>Language</option>
