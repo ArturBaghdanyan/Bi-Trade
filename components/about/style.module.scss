@@ -70,4 +70,17 @@
         }
     }
     }
+    @media only screen and (max-width: 768px) {
+        &_container {
+            &_content_title {
+                height: 200px;
+                > p {
+                    padding-left: 3rem;
+                }
+            }
+            &_column {
+                padding: 5rem 3rem;
+            }
+        }
+    }
 }
