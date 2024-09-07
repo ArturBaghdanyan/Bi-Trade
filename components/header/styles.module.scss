@@ -1,4 +1,4 @@
-.header {
+@mixin header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -62,9 +62,17 @@
 		}
 	}
 }
-
 }
-@media only screen and (max-width: 768px) {
+
+.header {
+	@include header();
+}
+.header_about {
+	@include header();
+	background-color: red !important;
+}
+
+@media only screen and (max-width: 992px) {
 	.header {
 		padding: 3rem;
 

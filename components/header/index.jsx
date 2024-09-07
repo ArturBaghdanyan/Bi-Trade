@@ -2,11 +2,12 @@ import styles from "./styles.module.scss";
 import biTrade from "../../assets/header_icons/bi-trade.svg";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isHomePage = false }) => {
 
+	console.log(isHomePage)
 	return (    
 		<header>
-			<div className={styles.header}>
+			<div className={`${isHomePage ? styles.header : styles.header_about}`}>
 
 			<div className={styles.header_logo}>
 				<img src={biTrade} alt="bi-trade"/>

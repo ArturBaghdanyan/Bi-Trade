@@ -3,10 +3,11 @@ import Header from "../header/index";
 import MainContainer from "../main/index";
 import Footer from "../footer";
 const Home = () => {
+	
 	return (
 	<>
 		<div className="columns">
-			<Header />
+			<Header isHomePage={true} />
 			<TradingText />
 		</div>	
 		<MainContainer />

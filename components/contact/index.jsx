@@ -13,9 +13,9 @@ import background from "../../assets/contact-icons/bg.svg";
 import { Link } from "react-router-dom";
 
 const ContactPage = () => {
-
+  
   return (
-    <div className={style.contact}>
+    <div className={`${style.contact}`}>
       <Header />
       <div className={style.contact_title}>
           <p>Contact Us</p>
