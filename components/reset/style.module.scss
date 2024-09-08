@@ -111,5 +111,58 @@
     }
          
     }
+    }
+
 }
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+    .reset {
+        &_container { 
+            padding: 100px 4rem !important;
+
+            &_content {
+                width: 70% !important;
+
+                &_column {
+                    padding: 55px !important;
+                    row-gap: 55px !important;
+                    &_title {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+            }   
+        }   
+}
+@media only screen and (max-width: 992px) {
+    .reset {
+        &_title > p {
+            padding-left: 3rem !important;
+        }
+        &_container { 
+            padding: 100px 2rem !important;
+
+            &_content {
+                width: 60% !important;
+
+                &_column {
+                    padding: 40px !important;
+                    row-gap: 40px !important;
+
+                    &_title {
+                        font-size: 20px !important;
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .reset {
+        &_container { 
+            &_content {
+             width: 80% !important;
+            }
+        }
+    }
 }
