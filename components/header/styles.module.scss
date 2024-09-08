@@ -25,6 +25,8 @@
 			column-gap: 25px;
 			
 			> a {
+				display: flex;
+				align-items: center;
 				text-decoration: none;
 				color: white;
 				height: 24px;
@@ -32,15 +34,27 @@
 				font-weight: 400;
 			}
 			
-			>select {
+			> select {
+				display: flex;
+				align-items: center;
 				background: none;
 				border: none;
 				color: white;
 				font-size: 16px;
 				font-weight: 400;
+				height: 24px;
 				> option {
 					background: gray;
 				}
+			}
+		}
+		> .flag {
+			display: none;
+			width: 24px;
+			height: 24px;
+			> img {
+				max-width: 100%;
+				height: 24px;
 			}
 		}
 .header_button {
@@ -66,15 +80,30 @@
 
 .header {
 	@include header();
+	.header_nav {
+		nav a {
+			color: white;
+		}
+	}
 }
 .header_about {
 	@include header();
-	background-color: red !important;
+	background-color: white !important;
+	.header_nav {
+		nav a, select {
+			color: rgba(0, 0, 0, 1) !important;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.header_about { 
+		padding: 3rem !important;
+	}
 }
 
 @media only screen and (max-width: 992px) {
 	.header {
-		padding: 3rem;
+		padding: 3rem !important;
 
 		&_logo {
 			width: 210px;
@@ -82,7 +111,54 @@
 		}
 		
 		&_nav {
+			column-gap: 20px;
+			
+			> .flag {
+				display: flex;
+				width: 40px;
+				height: 35px;
+				> img {
+					max-width: 100%;
+					height: 35px;
+				}
+			}
+			> .header_button {
+				width: 90px;
+				height: 40px;
+				> button {
+					font-size: 15px;
+					padding: 0;
+				}
+			}
+			> nav {
 			display: none;
+		}
+		}
+		
+	}
+}
+@media only screen and (min-width: 993px) and (max-width: 1190px) {
+	.header {
+		&_logo {
+			width: 210px;
+			height: 50px;
+		}
+
+		&_nav {
+			> nav {
+				column-gap: 15px !important;
+			> a, select {
+				font-size: 14px !important;
+			}
+		}
+		}
+		> .header_button {
+			width: 90px;
+			height: 40px;
+			> button {
+				font-size: 15px;
+				padding: 0;
+			}
 		}
 	}
 }
