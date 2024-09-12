@@ -6,6 +6,7 @@ import AboutPage from './components/about';
 import ContactPage from './components/contact';
 import Home from "./components/home";
 import { ResetPassword } from './components/reset';
+import { ErrorPage } from './components/error';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
       </Routes>
       <ResetPassword />
+      <ErrorPage />
     </div>
     </>
   );
