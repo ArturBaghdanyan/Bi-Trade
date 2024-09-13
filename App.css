@@ -17,8 +17,31 @@ button:hover, a:hover, select:hover {
 	color: orange !important;
 	cursor: pointer !important;
 }
+.pages_title {
+	background-color: rgba(0, 21, 15, 1);
+		width: 100%;
+		height: 259px;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		> p {
+			padding-left: 8rem;
+			font-weight: 600;
+			font-size: 48px;
+			color: rgba(255, 255, 255, 1);
+		}      
+}
+
 @media only screen and (max-width: 992px) {
 	.container-spacing {
 		padding: 3rem !important;
 	}
+	.pages_title {
+		height: 200px;
+	}
+	.pages_title > p {
+		padding-left: 3rem !important;
+	  }
 }
+
+

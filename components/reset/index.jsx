@@ -7,7 +7,7 @@ export const ResetPassword = () => {
     return (
         <div className={style.reset}>
             <Header />
-            <div className={style.reset_title}>
+            <div className="pages_title">
                 <p>Reset Password</p>
             </div>
             <div className={style.reset_container}>

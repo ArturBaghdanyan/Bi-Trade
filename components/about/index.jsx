@@ -18,7 +18,7 @@ const AboutPage = () => {
     <div className={style.about}>
       <Header />
       <div className={`${style.about_container}`}>
-        <div className={style.about_container_content_title}>
+        <div className="pages_title">
           <p>About Us</p>
         </div>
         <div className={style.about_container_column}>

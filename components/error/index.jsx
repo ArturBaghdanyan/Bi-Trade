@@ -7,25 +7,25 @@ export const ErrorPage = () => {
 	return (
 		<div className={style.error}>
 			<Header />
-			<div className={style.error_title}>
+			<div className="pages_title">
 				<p>404 Page</p>
 			</div>
-			<div className={style.error_container}>
-				<div className={`${style.error_container_content} container-spacing`}>
+			<div className={`${style.error_container} container-spacing`}>
+				<div className={style.error_container_content}>
 					<div className={style.error_container_content_column}>
 						<div className={style.error_container_content_column_img}>
 							<img src={illustration} alt="illustration" />
 						</div>
-						<div className={style.error_container_content_column_text}>
-							<div className={style.error_container_content_column_row}>
-								<h3>ooops! page not found</h3>
+						<div className={style.error_container_content_column_piece}>
+							<div className={style.error_container_content_column_piece_text}>
+								<h3><b>ooops!</b> page not found</h3>
 								<p>
 									Oops! It looks like you're lost. The page you were 
 									looking for couldn't be found. Don't worry, it 
 									happens to the best of us.
 								</p>
 							</div>
-							<div className={style.error_container_content_column_row_button}>
+							<div className={style.error_container_content_column_piece_button}>
 								<button>Back to home</button>
 							</div>
 						</div>

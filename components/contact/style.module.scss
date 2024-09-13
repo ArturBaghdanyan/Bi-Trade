@@ -2,20 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    &_title {
-        background-color: rgba(0, 21, 15, 1);
-            width: 100%;
-            height: 259px;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            > p {
-                padding-left: 8rem;
-                font-weight: 600;
-                font-size: 48px;
-                color: rgba(255, 255, 255, 1);
-            }      
-    }
     &_container {
         background: white;
         display: flex;
@@ -143,10 +129,7 @@
 
 @media only screen and (max-width: 992px) {
     .contact {
-        &_title > p {
-          padding-left: 3rem;
-        }
-    
+        
     &_container {
         flex-direction: column;
         row-gap: 30px;

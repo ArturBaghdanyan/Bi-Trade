@@ -17,7 +17,7 @@ const ContactPage = () => {
   return (
     <div className={`${style.contact}`}>
       <Header />
-      <div className={style.contact_title}>
+      <div className="pages_title">
           <p>Contact Us</p>
       </div>
       <div className={`${style.contact_container} container-spacing`}>
